@@ -1,11 +1,120 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
+
 * {
-    /* text-align: center; */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
+/* stles for header */
+.header {
+  margin: 0;
+  background-color: #fbfafa;
+  /* border: 1px solid violet; */
+}
 
-.header-img-logo{
-    height: 2rem;
-    width: 3rem;
-    text-align: left;
-    margin: 1.5px;
+.header-img {
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+.header-menu-list {
+  float: right;
+}
+
+.header-menu-list-a {
+  display: inline-block;
+  margin: 1.3rem;
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.8rem;
+  transition: all 0.5s ease .1s;
+}
+
+.header-menu-list-a:hover {
+    color: #1f2020;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* style for navbar */
+.nav {
+  border: 1px solid violet;
+  text-align: center;
+}
+
+.nav-logo {
+  height: 2rem;
+  width: 3.3rem;
+  float: left;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.nav-list-item {
+  text-decoration: none;
+  color: #000000;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+
+/* test navbar */
+.header__nav {
+    background-color: #f5f5f5; 
+}
+
+.nav__links {
+  font-weight: 500;
+  font-size: 1rem;
+ 
+}
+
+.nav__links>li,a,button {
+  text-decoration: none;
+  color:rgb(9, 9, 9);
+}
+
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.8rem ;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0rem 1.3rem;
+}
+
+.nav__links li a{
+    transition: all .5s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #1f2020;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cta button{
+    padding: .7rem 1.5rem;
+    background-color: #000000;
+    border-radius: .9rem;
+    color: #fff;
+    transition: all .3s ease 0s;
+    border: none;
+}
+
+.cta button:hover {
+    background-color: rgb(44, 49, 49);
+    color: #d7d4d4;
+    font-style: bold;
+    cursor: pointer ;
+   
 }

@@ -1,56 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- favicon added -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Nike.Just Do It.Nike IN</title>
-</head>
-<body dir="ltr">
+  </head>
+  <body dir="ltr">
     <article class="main-container">
-        <!--Header-->
-        <header class="header">
-            <!-- added link to logo -->
-            <a href="https://www.nike.com/in/" target="_blank">
-                <img src="images/header-logo.png" alt="nike logo" class="header-img">
-            </a>
-            <span class="header-menu">
-                <span class="header-menu-list">
-                    <a class="header-menu-list-a" href="" target="_blank">Help</a>
-                    <a class="header-menu-list-a" href="" target="_blank">Join Us</a>
-                    <a class="header-menu-list-a" href="" target="_blank">Sign In</a>
-                </span>
-            </span>            
-        </header>
+      <!--Header-->
+      <header class="header">
+        <!-- added link to logo -->
+        <a href="https://www.nike.com/in/" target="_blank">
+          <img
+            src="images/header-logo.png"
+            alt="nike logo"
+            class="header-img"
+          />
+        </a>
+        <span class="header-menu">
+          <span class="header-menu-list">
+            <input type="text" placeholder="Search..." />
+            <!-- <i class="fa-solid fa-bag-shopping"></i> -->
+            <a href="" target="_blank">Help</a>
+            <a href="" target="_blank">Join Us</a>
+            <a href="" target="_blank">Sign In</a>
+          </span>
+        </span>
+      </header>
 
-        <nav class="nav">
-            <!-- added link in nav -->
-            <a href="https://www.nike.com/in/" target="_blank">
-                <img src="images/nike-logo.png" alt="nike logo" class="nav-logo">
-            </a>
+      <nav class="nav">
+        <!-- added link in nav -->
+        <a href="https://www.nike.com/in/" target="_blank">
+          <img src="images/nike-logo.png" alt="nike logo" class="nav-logo" />
+        </a>
 
-            <span class="nav-list">
-                <a href="" class="nav-list-item">New & Featured</a>
-                <a href="" class="nav-list-item">Men</a>
-                <a href="" class="nav-list-item">Women</a>
-                <a href="" class="nav-list-item">Kids</a>
-                <a href="" class="nav-list-item">Sale</a>
-                <a href="" class="nav-list-item">Customise</a>
-                <a href="" class="nav-list-item">SNKRS</a>
-            </span>
+        <span class="nav-list">
+          <a href="">New & Featured</a>
+          <a href="">Men</a>
+          <a href="">Women</a>
+          <a href="">Kids</a>
+          <a href="">Sale</a>
+          <a href="">Customise</a>
+          <a href="">SNKRS</a>
+        </span>
 
-            <span class="nav-search">
-                
-            </span>
-        </nav>
+        <!-- <span class="nav-search">
+                <input type="text" placeholder="Search...">
+            </span> -->
+      </nav>
+
+      <div class="category">
+        <img class="category__img" src="images/header-logo.png" alt="" />
+        <ul class="category__links">
+          <li><a href="">New Releases</a></li>
+          <li><a href="">Jordan Sport</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">Kids</a></li>
+        </ul>
+      </div>
+
+      <div class="video">
+        <img src="images/nike-video.jpg" alt="nike-video" />
+      </div>
+
+      <div class="run_your_run">
+        <p class="ryr_heading__caps">RUN YOUR RUN</p>
+        <p class="ryr_heading">
+          Follow the feeling that keeps your running your best in the city
+        </p>
+
+        <span class="ryr_button">
+          <a href=""> <button>Shop Apparel</button> </a>
+          <a href=""> <button>Shop Footwear</button> </a>
+        </span>
+      </div>
+
+      <p class="__text">Gear up</p>
+      <div class="gear_up__images">
+        <div class="gear_up__image" id="gu__img1">
+          <p>NIKE</p>
+          <p>INFINITY 3</p>
+          <div class="gu__bottom">
+            <p>All the Cushion. All the Feels</p>
+            <a href=""><button>Shop Invincible</button></a>
+          </div>
+        </div>
+
+        <div class="gear_up__image" id="gu__img2">
+          <p>NIKE</p>
+          <p>INFINITY 4</p>
+          <div class="gu__bottom">
+            <p>Give Your Feet a Hug</p>
+            <a href=""><button>Shop Infinity</button></a>
+          </div>
+        </div>
+
+        <div class="gear_up__image" id="gu__img3">
+          <p>NIKE</p>
+          <p>PEGASUS 40</p>
+          <div class="gu__bottom">
+            <p>A Springy Ride for Every Run</p>
+            <a href=""><button>Shop Pegasus</button></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="__text">Just In</p>
+      <div class="gear_up__images">
+        <div class="gear_up__image" id="gu__img1">
+          <p>NIKE</p>
+          <p>INFINITY 3</p>
+          <div class="gu__bottom">
+            <p>Own the Floot</p>
+            <a href=""><button>Shop Now</button></a>
+          </div>
+        </div>
+
+        <div class="gear_up__image" id="gu__img2">
+          <p>NIKE</p>
+          <p>INFINITY 4</p>
+          <div class="gu__bottom">
+            <p>Make Your Move</p>
+            <a href=""><button>Shop</button></a>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer_list">
+          <ul>
+            <li><a href="">FIND A STORE</a></li>
+            <li><a href="">BECOME A MEMBER</a></li>
+            <li><a href="">Send Us Feedback</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="">FIND A STORE</a></li>
+            <li><a href="">BECOME A MEMBER</a></li>
+            <li><a href="">Send Us Feedback</a></li>
+            <li><a href="">FIND A STORE</a></li>
+            <li><a href="">BECOME A MEMBER</a></li>
+            <li><a href="">Send Us Feedback</a></li>
+          </ul>
+
+          <ul>
+            <li><a href="">FIND A STORE</a></li>
+            <li><a href="">BECOME A MEMBER</a></li>
+            <li><a href="">Send Us Feedback</a></li>
+            <li><a href="">FIND A STORE</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="">FIND A STORE</a></li>
+            <li><a href="">BECOME A MEMBER</a></li>
+          </ul>
+        </div>
+      </footer>
     </article>
-</body>
+  </body>
 </html>

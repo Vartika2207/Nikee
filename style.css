@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap'); */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Montserrat:wght@300;500&display=swap");
 
@@ -29,8 +28,7 @@
 
 .header-menu-list a {
   display: inline-block;
-  margin: 1.3rem;
-  text-decoration: none;
+  margin: 1.2rem;
   color: #000000;
   font-size: 0.8rem;
   transition: all 0.5s ease 0.1s;
@@ -39,6 +37,7 @@
 .header-menu-list input {
   border-radius: 2rem;
   border: none;
+  margin: 5px;
   padding: 0.7rem;
   background-color: #dad9d9;
 }
@@ -46,6 +45,10 @@
 .header-menu-list a:hover {
   color: #1f2020;
   font-weight: bold;
+}
+
+header-menu-list a i:hover {
+   
 }
 
 /* style for navbar */
@@ -59,7 +62,6 @@
   height: 1.8rem;
   width: 3.3rem;
   float: left;
-  /* margin-left: .5rem; */
 }
 
 .nav-list {
@@ -123,7 +125,7 @@
 .ryr_heading__caps {
   font-size: 4rem;
   font-weight: bolder;
-  __text  padding: 1rem;
+  padding: 1rem;
 }
 
 .ryr_heading {
@@ -194,12 +196,10 @@
 .gu__bottom {
   color: #fff;
   font-size: 1rem;
-  /* align-items: bottom; */
   position: relative;
   font-weight: normal;
   display: table;
    vertical-align: bottom;
-  /* float: left; */
 }
 
 .gu__bottom p {
@@ -226,17 +226,140 @@
     background-color: #c5c4c4;
 }
 
+
 /* footer */
 .footer {
-    background-color: #000000;
-    display: flex;
-    justify-content: space-around;
-    /* color: #fff; */
+  background-color: #000000;
+  padding: 4.5rem;
 }
 
+.footer__container {
+  max-width: 73rem;
+  /* background-color: #d7d4d4; */
+  margin: auto;
+}
 
-.footer div a {
-    color: #fff;
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__row ul {
+  list-style: none;
+}
+
+.footer__col {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.footer__col h4 {
+  font-size: .8rem;
+  color: #ffff;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+/* to get red line unders h4 --> not required */
+/* .footer__col h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+} */
+
+.footer__col li:not(:last-child) {
+  margin-bottom: .6rem;
+}
+
+.footer__col li a {
+  font-size: .75rem;
+  color: #a9a7a7;
+  transform: all .3s ease 0s;
+}
+
+.footer__col li a:hover {
+  color: #fff;
+}
+
+.footer__col .social__links a {
+  color: #161616;
+  background-color: #b5b5b5;
+  padding: 3.8px;
+  border-radius: 15px;
+  margin: .3rem;
+}
+
+.footer__col .social__links a:hover {
+  background-color: #fff;
+}
+
+.footer__bottom {
+  color: #a9a7a7;
+  background-color: #000000;
+  font-size: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; /**/
+}
+
+.fb__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fb__location {
+  color: #fff;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fb__location i {
+  margin: 0 .4rem;
+}
+
+.fb__options {
+  float: end;
+  margin-bottom: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.fb__options ul {
+  /* float: inline-end; */
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 0 1.5rem; */
+}
+
+.fb__options ul li {
+  margin: 0 1.5rem;
+}
+
+.fb__options ul li:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+/* media queries */
+@media(max-width: 767px) {
+  .footer__col {
+    width: 50%;
+    margin-bottom: 1.8rem;
+  }
+}
+
+@media(max-width: 574px) {
+  .footer__col {
+    width: 100%;
+  }
 }
 
 

@@ -226,6 +226,116 @@ header-menu-list a i:hover {
     background-color: #c5c4c4;
 }
 
+/* image slider */
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 35rem;
+}
+
+.slider__container:hover {
+  cursor: pointer;
+}
+
+.slider__wrapper .image__list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(10, 1fr);
+  overflow-x: auto;
+  margin: 1.5rem;
+}
+
+.image__list::-webkit-scrollbar {
+  display: none;
+}
+
+.slider__wrapper .image__list .image__item {
+  width: 35rem;
+  height: 40rem;
+  object-fit: cover;
+}
+
+.image__list__box {
+  height: 15rem; 
+}
+
+.image__list__box .heading {
+  font-size: 1.1rem;
+  color: #000000;
+}
+
+.image__list__box .sub__heading {
+  font-size: .8rem;
+  color: #403f3f;
+}
+
+.ilb__button {
+  margin: 1.5rem 0;
+  padding: .5rem 0;
+  text-decoration: underline;
+  text-decoration-color: #aaaaaa;
+  text-underline-offset: .4rem;
+  color: #000000;
+  
+}
+
+.image__list__box a {
+  margin: 0;
+  font-size: .7rem;
+}
+
+.image__list__box a:hover {
+  color: #616060;
+}
+
+/* bottomList */
+.bottom__list {
+  background-color: #fff;
+  padding: 4.5rem;
+}
+
+.bl__container {
+  max-width: 73rem;
+  /* background-color: #d7d4d4; */
+  margin: auto;
+}
+
+.bl__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bl__row ul {
+  list-style: none;
+}
+
+.bl__col {
+  width: 25%;
+  padding: 0 1rem;
+}
+
+.bl__col h4 {
+  font-size: .8rem;
+  color: #000000;
+  margin-bottom: 1.8rem;
+  position: relative;
+}
+
+.bl__col li:not(:last-child) {
+  margin-bottom: .6rem;
+}
+
+.bl__col li a {
+  font-size: .9rem;
+  color: #787878;
+  transform: all .3s ease 0s;
+}
+
+.bl__col li a:hover {
+  color: #262626;
+}
 
 /* footer */
 .footer {
@@ -304,7 +414,7 @@ header-menu-list a i:hover {
   font-size: .8rem;
   display: flex;
   flex-wrap: wrap;
-  position: relative; /**/
+  position: relative; 
 }
 
 .fb__container {
@@ -354,10 +464,19 @@ header-menu-list a i:hover {
     width: 50%;
     margin-bottom: 1.8rem;
   }
+
+  .bl__col {
+    width: 50%;
+    margin-bottom: 1.8rem;
+  }
 }
 
 @media(max-width: 574px) {
   .footer__col {
+    width: 100%;
+  }
+
+  .bl__col {
     width: 100%;
   }
 }

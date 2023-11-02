@@ -228,15 +228,23 @@ header-menu-list a i:hover {
 
 /* image slider */
 .slider__container {
-  display: flex;
+  display: list-item;
   align-items: center;
   justify-content: center;
   background-color: #fff;
-  max-width: 35rem;
+  max-width: 100%;
+}
+
+.slider__container h3 {
+  margin: 1.2rem;
 }
 
 .slider__container:hover {
   cursor: pointer;
+}
+
+.image__list {
+  justify-content: center;
 }
 
 .slider__wrapper .image__list {
@@ -469,6 +477,20 @@ header-menu-list a i:hover {
     width: 50%;
     margin-bottom: 1.8rem;
   }
+
+  .header-menu-list a{
+    margin: .5rem;
+  }
+
+  .category__links li {
+    margin: 0 .3rem;
+  }
+
+  .slider__container {
+    display: list-item;
+  }
+
+ /* for slider container */
 }
 
 @media(max-width: 574px) {
@@ -478,6 +500,14 @@ header-menu-list a i:hover {
 
   .bl__col {
     width: 100%;
+  }
+
+  .gear_up__images {
+    display:list-item;
+  }
+
+  .slider__container {
+    display: list-item;
   }
 }
 
